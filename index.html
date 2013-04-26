@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <meta http-equiv="content-language" content="en" />
+  <title>JMorph - morphing jquery gallery demo</title>
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="jmorph.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+		$('.band > li:last-child').addClass('last');
+	});
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="container">
+
+		<div class="jmorph">
+			<div class="imageContainer">
+			<div class="image">
+				<div class="currentImg" style>
+					<div class="nextImg"></div>
+				</div>
+			</div>
+			</div>
+			<div class="clearfix">
+			<!--<a href="#previous" class="previous">&lt;&nbsp;Prev</a>-->
+			<div class="bandContainer">
+			<ul class="band">
+				<li>
+					<a href="1.jpg"> 
+						<span class="arrow"></span>
+						<div class="text">
+                            Smart Competition
+                       </div>
+					</a>
+				</li>
+				<li>
+					<a href="2.jpg">
+					<span class="arrow"></span>
+						<div class="text"> 
+                            Smart Traveller's
+                         </div>					
+					</a>
+				</li>
+				<li>
+					<a href="3.jpg"><span class="arrow"></span>
+						<div class="text"> 
+							Smart City Guide 
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="4.jpg"><span class="arrow"></span>
+						<div class="text"> Smart Top Tips </div>
+					</a>
+				</li>
+				<li>
+					<a href="5.jpg"><span class="arrow"></span>
+						<div class="text">
+								Smart Travel
+						  </div>
+					</a>
+				</li>
+				<li>
+					<a href="6.jpg"><span class="arrow"></span>
+						<div class="text"> We 'Like' This </div>
+					</a>
+				</li>
+			</ul>
+			</div>
+			<!--<a href="#next" class="next">Next&nbsp;&gt;</a>-->
+			</div>
+		</div>
+</div>
+<script>
+$(".jmorph").jmorphGallery();
+</script>
+</body>
+</html>
